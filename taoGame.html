@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Đoán số</h1>
+<button id="play" onclick="play()">Chơi</button>
+<input type="number" placeholder="Gõ đây" id="but">
+<script>
+  var count = 0;
+  function play(){
+    count++;
+    let input= +document.getElementById("but").value;
+    let ran = Math.floor(Math.random()*10+1)
+    if (count<4){
+      if (input===ran){
+        alert('Phá đảo')
+      } else {
+        alert('Non. Số lượt chơi còn lại là:'+(3-count))
+      }
+    } else {
+      alert('Thua')
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let count = 0
+let N = 2
+let numbers= +prompt('Nhập số nguyên tố đầu tiên')
+let check
+while (count<numbers){
+    check = false
+    for (let i=2; i<N; i++){
+        if(N%i===0){
+            check=true;
+        }
+    }
+    if (!check){
+        document.write(N +'<br>')
+        count++
+    }
+    N++
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="but">
+<script>
+    const number = parseInt(prompt('Nhập số: '))
+    let a=0;
+    let b=1;
+    let c;
+    let d = "";
+    for (let i=0 ; i<=number ; i++){
+        d = (d + `${a} `+ '<br>');
+        c = a+b ;
+        a = b;
+        b = c;
+    } document.write(d)
+</script>
+</body>
+</html>

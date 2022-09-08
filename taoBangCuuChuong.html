@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let bang;
+        bang = "<table border='1'>"
+        for (let i = 1; i <= 9; i++) {
+            bang += '<tr>'
+            for (let y = 1; y <= 9; y++) {
+                bang += '<td>' + y + ' x ' + i + ' = ' + (y * i) + '</td>'
+            }
+            bang += '</tr>'
+        }
+        console.log(bang)
+        bang += '</table>'
+        document.write(bang)
+</script>
+
+
+</body>
+</html>
